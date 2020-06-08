@@ -1,0 +1,26 @@
+
+.jumbotron{
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.thumbnail p {
+  margin-top: 15px;
+  
+}
+
+a{
+  background-color: rgb(2, 31, 8);
+}
+.jumbotron button:hover{
+  background-color: rgb(218, 45, 189);
+}
+
+

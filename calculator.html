@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input[type="button"] 
+         { 
+         background-color:skyblue; 
+         color: black; 
+         border: solid black 1px;
+         border-color: orange; 
+         width:100% ;
+         padding: 20px;
+         } 
+		table{
+			width: 20%;
+		}
+		input[type="text"]
+		{
+			width: 100%;
+			border-color: orange;
+			padding-right:10px;
+			padding-top: 20px;
+			text-size:202px;
+		} 
+
+	</style>
+	<script type="text/javascript">
+		var firstnumber;
+		var secondnumber;
+		var operation;
+		var result;
+       function add()
+       {
+           form1.display.value += '+';
+       }
+
+       function subs()
+       {
+           form1.display.value += '-';
+       }
+
+       function mult()
+       {
+           form1.display.value += '*';
+       }
+
+       function mods()
+       {
+           form1.display.value += '%';
+       }
+
+       function divs()
+       {
+           form1.display.value += '/';
+       }
+       function eqal()
+       {
+           form1.display.value = eval(form1.display.value);
+       }
+       function onee()
+       {
+       	form1.display.value += '1';
+       }
+
+       function twoo()
+       {
+       	form1.display.value += '2';
+       }
+
+       function threee()
+       {
+       	form1.display.value += '3';
+       }
+
+       function fourr()
+       {
+       	form1.display.value += '4';
+       }
+
+       function fivee()
+       {
+       	form1.display.value += '5';
+       }
+
+       function sixx()
+       {
+       	form1.display.value += '6';
+       }
+
+       function sevenn()
+       {
+       	form1.display.value += '7';
+       }
+
+       function eights()
+       {
+       	form1.display.value += '8';
+       }
+
+       function ninee()
+       {
+       	form1.display.value += '9';
+       }
+
+       function zeroo()
+       {
+       	form1.display.value += '0';
+       }
+
+
+	</script>
+</head>
+<body>
+	<form name="form1">
+		<table>
+		<tr id="display">
+			<td colspan="3"><input type="text" name="display"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="plus" value="+" onclick="add()"></td>
+			<td><input type="button" name="minus" value="-" onabort="subs()"></td>
+			<td><input type="button" name="mul" value="*" onclick="mult()"></td>
+			
+		</tr>
+        <tr>
+        	<td><input type="button" name="mod" value="%" onclick="mods()"></td>
+			<td><input type="button" name="div" value="/" onclick="divs()"></td>
+			<td><input type="button" id="clear" name="clear" value="c" onclick="form1.display.value = ''"></td>
+			
+        </tr>
+		<tr>
+			<td><input type="button" name="one" value="1" onclick="onee()"></td>
+			<td><input type="button" name="two" value="2" onclick="twoo()"></td>
+			<td><input type="button" name="three" value="3" onclick="threee()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="four" value="4" onclick="fourr()"></td>
+			<td><input type="button" name="five" value="5" onclick="fivee()"></td>
+			<td><input type="button" name="six" value="6" onclick="sixx()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="seven" value="7" onclick="sevenn()"></td>
+			<td><input type="button" name="eight" value="8" onclick="eights()"></td>
+			<td><input type="button" name="nine" value="9" onclick="ninee()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name=""></td>
+			<td><input type="button" name="zero" value="0" onclick="zeroo()"></td>
+			<td><input type="button" name="equal" value="=" onclick="eqal()"></td>
+		</tr>
+	</table>
+	</form>
+	
+</body>
+</html>
+
+
+<!--l>
+   <head>
+   <body>
+      <form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+   </head>
+</html>
+
+-->

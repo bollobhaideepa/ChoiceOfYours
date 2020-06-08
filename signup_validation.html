@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> form & vlidation in plain html</title>
+  </head>
+  <body>
+      <form class="box" action="index.html" method="get">
+              <link rel="stylesheet" href="form.css">
+              <h1>Register to sweet homes</h1>
+              <!---first name--->
+              <label id="label-color" for="fist name">First name:</label>
+              <input type="First name" id="first name" value="" placeholder="Enter your first name" required pattern=".{4,9}" title="minimum 5 to 9 characters">
+
+              <!---last name--->
+              <label id="label-color" for="Last name">Last Name:</label>
+              <input type="Last Name" name="Last Name" value="" placeholder="Enter your last name" required pattern="(?=.*\d),(?=.*[a-z]),(?=.*[A-Z].{7,18}">
+              <!---gender--->
+              <h3  id="label-color">Gender</h3>
+              <label id="label-color" for="male">Male:</label>
+              <input type="radio" name="gender" value="male">
+
+              <label id="label-color" for=" female">Female:</label>
+              <input type="radio" name="gender" value="">
+
+              <label id="label-color" for=" Orther">Orther:</label>
+              <input type="radio" name="gender" value="">
+              <br>
+              <br>
+                <!---email box--->
+              <label id="label-color"for="Email">Email:</label>
+              <input type="Email" name="Email" value="" placeholder="Enter valid email" required>
+
+          <!---password box--->
+        <label id="label-color"for="Passwword">Passwword:</label>
+        <input type="password" id="password" name="Passwword" value="" placeholder="Enter strong password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        <br>
+
+          <!---DOB drop down box--->
+        <label id="label-color" for="Date Of Birth">Date Of Birth:</label>
+        <select class="Month" name="" required>
+                    <option value="">Month</option>
+                    <option value="">january</option>
+                    <option value="">feb</option>
+                    <option value="">march</option>
+                    <option value="">april</option>
+                    <option value="">may</option>
+                    <option value="">june</option>
+                    <option value="">julay</option>
+                    <option value="">aug</option>
+                    <option value="">sept</option>
+                    <option value="">Oct</option>
+                    <option value="">Nove</option>
+                    <option value="">Dec</option>
+          </select>
+
+          <select class="Day" name="" required>
+                    <option value="">Day</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">05</option>
+                    <option value="">06</option>
+                    <option value="">07</option>
+                    <option value="">08</option>
+                    <option value="">09</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+        </select>
+
+        <select class="Year" name="" required>
+                    <option value="">Year</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+        </select>
+        <br>
+        <br>
+                <label id="label-color" for="Aggrement">I agree to terms and conditions</label>
+                <input type="checkbox" name="" value="" required>
+                <br>
+
+                <input type="submit" name="submit button" value="Submit">
+      </form>
+  </body>
+</html>

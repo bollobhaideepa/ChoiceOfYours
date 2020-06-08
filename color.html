@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            body #box{
+                background-color: #ffff;
+            }
+            div{
+                padding-top: 200px;
+            }
+            button{
+                width: 100px;
+                height: 50px;
+            }
+        </style>
+        <script>
+            function button_click(color)
+            {
+                document.getElementById("box").style.backgroundColor=color;
+            }
+
+        </script>
+    </head>
+    <body id="box">
+        <h1 align="center" style="color: pink;">colorfull colors</h1>
+        <div align="center">
+            <button type="button" style="background-color: red;" onclick="button_click('red')">RED</button>
+            <button type="button" style="background-color: greenyellow;" onclick="button_click('greenyellow')">GREEN</button>
+            <button type="button" style="background-color: blue;" onclick="button_click('blue')">BLUE</button>
+            <button type="button" style="background-color: orchid;" onclick="button_click('orchid')">ORANGE</button>
+        </div>
+    </body>
+</html>
